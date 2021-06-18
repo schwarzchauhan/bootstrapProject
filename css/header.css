@@ -1,0 +1,236 @@
+header {
+    background-image: linear-gradient(to right, rgba(255, 0, 0, 0.6), rgba(255, 166, 0, 0.6), rgba(255, 255, 0, 0.6), rgba(0, 128, 0, 0.6), rgba(0, 0, 255, 0.6), rgba(76, 0, 130, 0.6), rgba(238, 130, 238, 0.6));
+    overflow: visible;
+}
+
+
+/* --------------- ✋ ------------------ */
+
+.top-bar {
+    padding: 5px;
+    border: 3px dotted black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.top-bar img {
+    height: 80px;
+    display: block;
+    border: 3px dashed black;
+}
+
+.top-heading {
+    width: 100%;
+    text-align: center;
+    font-size: 40px;
+    border: 3px solid black;
+}
+
+.glow {
+    animation: glow 1s normal 0s infinite;
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #fff, 0 0 50px #fff, 0 0 60px #fff, 0 0 70px #fff;
+    }
+    to {
+        text-shadow: 0 0 20px #ff6347, 0 0 30px #ff6347, 0 0 40px #ff6347, 0 0 50px #ff6347, 0 0 60px #ff6347, 0 0 70px #ff6347, 0 0 80px #ff6347;
+    }
+}
+
+
+/* ---------------- ✋ ----------------- */
+
+
+/*
+.nav-bar {
+    display: block;
+    z-index: 0;
+    background-color: rgba(206, 132, 79, 0.733);
+    border: 4px solid rgb(66, 131, 41);
+}
+*/
+
+
+/*clearfix heack */
+
+
+/*
+.nav-bar::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.nav-bar>a {
+    display: block;
+    float: left;
+    margin: 2px;
+    padding: 5px;
+    font-size: 20px;
+    border: 2px solid seashell;
+    text-decoration: none;
+}
+
+.nav-bar>a:hover {
+    background-color: darkturquoise;
+    font-weight: bold;
+}
+*/
+
+
+/* 🖖 */
+
+
+/*
+.dropdown {
+    display: block;
+    float: left;
+    position: relative;
+}
+*/
+
+
+/* 🤘  */
+
+
+/*
+a.drop-btn {
+    display: block;
+    float: left;
+    margin: 2px;
+    padding: 5px;
+    font-size: 20px;
+    text-decoration: none;
+    border: 2px solid seashell;
+}
+
+a.drop-btn:hover {
+    background-color: darkturquoise;
+    font-weight: bold;
+}
+*/
+
+
+/* 🤘 */
+
+
+/*
+.dropdown .dropdown-content {
+    display: none;
+    z-index: 1;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    min-width: 100px;
+    background-color: rgba(206, 132, 79, 0.733);
+    border: 2px solid salmon;
+    text-align: center;
+}
+
+.dropdown .dropdown-content>a {
+    display: block;
+    padding: 5px;
+    text-decoration: none;
+    border: 2px solid seashell;
+}
+
+.dropdown .dropdown-content>a:hover {
+    background-color: darkturquoise;
+    font-weight: bold;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+*/
+
+
+/* --------------- ✋ -------------------- */
+
+.navbar {
+    border: 4px solid hotpink;
+}
+
+#participation-btn {
+    cursor: pointer;
+}
+
+
+/* --------------- ✋ -------------------- */
+
+.participation {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(245, 245, 220, 0.884);
+    border: 5px solid rebeccapurple;
+}
+
+.participation-form-container {
+    width: 40%;
+    height: 80%;
+    margin: auto;
+    transform: translate(0, 40%);
+    padding: 10px;
+    border: 5px dashed saddlebrown;
+    background-color: thistle;
+}
+
+#form-close-btn {
+    position: absolute;
+    right: 0;
+    margin-right: 3px;
+    font-weight: bold;
+    font-size: 20px;
+    outline: none;
+    background: none;
+    border: none;
+}
+
+#form-close-btn:hover {
+    cursor: pointer;
+    color: slateblue;
+}
+
+.participation-form button[type="submit"] {
+    background: none;
+    border: none;
+    background-color: mediumpurple;
+    color: aliceblue;
+    width: 100%;
+    padding: 5px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.participation-form button[type="submit"]:hover {
+    cursor: pointer;
+    background-color: purple;
+}
+
+.participation-form input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+}
+
+.popupAnimation {
+    animation: zoom 0.3s linear 0s 1;
+}
+
+@keyframes zoom {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}

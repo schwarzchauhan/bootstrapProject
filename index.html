@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Orchestra</title>
+
+    <!-- my css  -->
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/section.css">
+    <link rel="stylesheet" href="./css/footer.css">
+
+    <!-- bootstrap css cdn -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous"> -->
+
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="./bootstrap/bootstrap.css">
+
+    <!-- owl carousel css -->
+    <link rel="stylesheet" href="./owlCarousel/owl.carousel.css">
+    <link rel="stylesheet" href="./owlCarousel/owl.theme.default.css">
+
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/b898fcfbca.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+
+        <div class="top-bar">
+            <img src="./pix/buddha.jpg" alt="buddha image">
+            <div class="top-heading glow">ORCHESTRA</div>
+        </div>
+        <!-- <div class="nav-bar">
+            <a href="javascript:void(0)" class="nav-btn">Home</a>
+            <a href="javascript:void(0)" class="nav-btn">About</a>
+            <a href="javascript:void(0)" class="nav-btn  participation-btn">Tickets</a>
+            <div class="dropdown">
+                <a href="javascript:void(0)" class="drop-btn">Events</a>
+                <div class="dropdown-content">
+                    <a href="javascript:void(0)">orchester</a>
+                    <a href="javascript:void(0)">musik</a>
+                    <a href="javascript:void(0)">konziert</a>
+                    <a href="javascript:void(0)">filmfest</a>
+                </div>
+            </div>
+        </div> -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="https://getbootstrap.com/docs/5.0/assets/brand/bootstrap-logo.svg" alt="bootstrap logo" width="30" height="24">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="participation-btn">Login</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Dropdown link
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                        </li>
+                    </ul>
+                </div>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
+
+
+        <div class="participation popupAnimation">
+            <form class="participation-form" action="participation-data" method="POST">
+                <div class="participation-form-container">
+                    <button id="form-close-btn">&times;</button>
+                    <label for="rollno">Roll number</label>
+                    <input type="text" placeholder="Enter roll no" name="rollno" required>
+
+                    <label for="name">Name</label>
+                    <input type="text" placeholder="Enter name" name="name" required>
+
+                    <button type="submit">Login</button>
+                </div>
+            </form>
+        </div>
+
+    </header>
+
+
+    <section>
+        <div id="mainCarouselOfWebsite" class="carousel slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#mainCarouselOfWebsite" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#mainCarouselOfWebsite" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#mainCarouselOfWebsite" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#mainCarouselOfWebsite" data-bs-slide-to="3" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#mainCarouselOfWebsite" data-bs-slide-to="4" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./pix/s1.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./pix/s2.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./pix/s3.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./pix/s4.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./pix/s5.jpg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#mainCarouselOfWebsite" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#mainCarouselOfWebsite" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo nemo sint accusantium saepe harum mollitia, consequuntur tenetur inventore minima necessitatibus iure obcaecati cum odit culpa odio consectetur illum vitae laudantium!</p>
+
+        <form action="fileupload" method="post" enctype="multipart/form-data">
+            <input type="file" name="filetoupload"><br>
+            <input type="submit">
+        </form>
+
+        <span id="uniq"></span>
+
+
+        <div class="sectionCounter">
+            <div class="countCol">
+                <h3><i class="fas fa-users"></i></h3>
+                <h3>10+</h3>
+                <p>Partners</p>
+            </div>
+            <div class="countCol">
+                <h3><i class="fab fa-galactic-senate"></i></h3>
+                <h3>10+</h3>
+                <p>Konzerts</p>
+            </div>
+            <div class="countCol">
+                <h3><i class="fab fa-jedi-order"></i></h3>
+                <h3>10+</h3>
+                <p>Festivals</p>
+            </div>
+            <div class="countCol">
+                <h3><i class="fas fa-calendar-week"></i></h3>
+                <h3>10+</h3>
+                <p>Events</p>
+            </div>
+        </div>
+
+
+        <div class="testimonials-container">
+            <div class="owl-carousel owl-theme owl-loaded">
+                <div class="owl-stage-outer">
+                    <div class="owl-stage">
+                        <div class="owl-item">
+                            <img src="./pix/t1.jpg" alt="...">
+                            <h5>Amin</h5>
+                            <p class="card-text">soothing musics</p>
+                        </div>
+                        <div class="owl-item">
+                            <img src="./pix/t2.jpg" alt="...">
+                            <h5>Ajeet</h5>
+                            <p class="card-text">Enjoy the vibes</p>
+                        </div>
+                        <div class="owl-item">
+                            <img src="./pix/t3.jpg" alt="...">
+                            <h5>Amy</h5>
+                            <p class="card-text">Relaxed after whole day exhaustion.</p>
+                        </div>
+                        <div class="owl-item">
+                            <img src="./pix/t4.jpg" alt="...">
+                            <h5>Aditya</h5>
+                            <p class="card-text">in love with tunex</p>
+                        </div>
+                        <div class="owl-item">
+                            <img src="./pix/t5.jpg" alt="...">
+                            <h5>Vishwamitra</h5>
+                            <p class="card-text">so much to see & listen to.</p>
+                        </div>
+                        <div class="owl-item">
+                            <img src="./pix/t6.jpg" alt="...">
+                            <h5>Alexandra</h5>
+                            <p class="card-text">companion of autumn season.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="owl-nav">
+                    <div class="owl-prev">prev</div>
+                    <div class="owl-next">next</div>
+                </div>
+                <!-- <div class="owl-dots">
+                    <div class="owl-dot active"><span></span></div>
+                    <div class="owl-dot"><span></span></div>
+                    <div class="owl-dot"><span></span></div>
+                </div> -->
+            </div>
+        </div>
+
+
+
+    </section>
+
+    <footer>
+        <div class="f-social-bar" style="text-align: center;">
+            <h1>Orchestra</h1>
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <a href="javascript:void(0)"><i class="fab fa-facebook-square" style="color: #4267B2;"></i></a>
+                    </div>
+                    <div class="col">
+                        <a href="javascript:void(0)"><i class="fab fa-twitter" style="color: #1DA1F2;"></i></a>
+                    </div>
+                    <div class="col">
+                        <a href="javascript:void(0)"><i class="fab fa-google"></i></a>
+                    </div>
+                    <div class="col">
+                        <a href="javascript:void(0)"><i class="fab fa-youtube" style="color: red;"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="f-links-container">
+            <div class="container">
+                <div class="row">
+                    <div class="col f-bootstap-logo">
+                        <img src="https://getbootstrap.com/docs/5.0/assets/brand/bootstrap-logo.svg" alt="bootstrap logo">
+                    </div>
+                    <div class="col">
+                        <h4>Orchestra</h4>
+                        <ul>
+                            <li> <a href="javascript:void(0)"> About Us</a></li>
+                            <li> <a href="javascript:void(0)"> Terms & condition</a></li>
+                            <li> <a href="javascript:void(0)"> Bug Bounty</a></li>
+                            <li> <a href="javascript:void(0)"> Privacy Policy</a></li>
+                            <li> <a href="javascript:void(0)"> Press Release</a></li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <h4>Community</h4>
+                        <ul>
+                            <li> <a href="javascript:void(0)"> Musicians</a></li>
+                            <li><a href="javascript:void(0)"> Sponsors</a></li>
+                            <li> <a href="javascript:void(0)"> Band</a> </li>
+                            <li><a href="javascript:void(0)">Social </a></li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <h4>Resources</h4>
+                        <ul>
+                            <li> <a href="javascript:void(0)">Blogs</a></li>
+                            <li><a href="javascript:void(0)"> Vlogs </a></li>
+                            <li><a href="javascript:void(0)"> Products </a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <hr>
+        <div class="f-copyright" style="text-align: center;">
+            <p>© Copyright 2016-2021, All Rights Reserved Orchestra, Hamburg</p>
+        </div>
+    </footer>
+
+
+    <!-- jQuery CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- bootstrap CDN,  Bootstrap Bundle with Popper  -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script> -->
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="./bootstrap/bootstrap.bundle.js"></script>
+
+    <!-- owl carousel js files  -->
+    <script src="./owlCarousel/owl.carousel.js"></script>
+
+    <!-- js files -->
+    <script src="./js/header.js"></script>
+    <script src="./js/section.js"></script>
+</body>
+
+
+</html>
