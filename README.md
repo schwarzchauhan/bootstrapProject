@@ -12,3 +12,7 @@
 -  owl carousel 2 , 2.3.4
    -  owl.carousel.js
    -  owl.carousel.css
+
+next commit 
+- owl carousel modified
+- version 1
